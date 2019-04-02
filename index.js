@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-console.log(`Env variables: Host = ${process.env.DB_HOST} Db = ${process.env.DB_NAME} User = ${process.env.DB_USER} Pass = ${process.env.DB_PASS}`)
+console.log(`Env variables: Port = ${process.env.PORT} Host = ${process.env.DB_HOST} Db = ${process.env.DB_NAME} User = ${process.env.DB_USER} Pass = ${process.env.DB_PASS}`)
 
 // let trusts = [];
 // datastore.datastore().Trusts.findAll({raw: true, attributes: ['Id', 'Code', 'Name']}).then(values => {
@@ -19,4 +19,4 @@ app.post('/dialogflow', function (req, res) {
     });
 });
 
-app.listen(3000, () => console.log('Example app listening on port 3000.'));
+app.listen(process.env.PORT, () => console.log('Example app listening on port 3000.'));
