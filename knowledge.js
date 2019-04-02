@@ -1,4 +1,5 @@
 const datastore = require('./datastore');
+const maps = require('./maps');
 const DEFAULT_RESPONSE = `Sorry, I couldn't find anything to help with that!`;
 const graph = {
     ['geo-city']: {
@@ -6,7 +7,15 @@ const graph = {
     }
 };
 
+let trusts = [];
+datastore.datastore().Trusts.findAll({raw: true, attributes: ['Name']}).then(values => {
+    trusts = values.map(value => value.Name);
+    // console.log(trusts);
+});
+
+// TODO: Need to make methods for transforms as well as make a knowledge base for DF of common questions.
 function servicesNearLoc(params) {
+    maps.distanceMatrix(params['geo-city'], trusts);
     return `Returning services near: ${params['geo-city']}`;
 }
 

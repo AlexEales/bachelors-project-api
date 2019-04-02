@@ -1,0 +1,580 @@
+[
+  {
+    "distance": {
+      "text": "73.9 mi",
+      "value": 118972
+    },
+    "duration": {
+      "text": "1 hour 27 mins",
+      "value": 5214
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "69.6 mi",
+      "value": 111991
+    },
+    "duration": {
+      "text": "1 hour 46 mins",
+      "value": 6351
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "82.4 mi",
+      "value": 132622
+    },
+    "duration": {
+      "text": "3 hours 10 mins",
+      "value": 11373
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "155 mi",
+      "value": 249606
+    },
+    "duration": {
+      "text": "2 hours 50 mins",
+      "value": 10211
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "57.0 mi",
+      "value": 91728
+    },
+    "duration": {
+      "text": "1 hour 36 mins",
+      "value": 5757
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "224 mi",
+      "value": 361083
+    },
+    "duration": {
+      "text": "3 hours 54 mins",
+      "value": 14025
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "59.2 mi",
+      "value": 95213
+    },
+    "duration": {
+      "text": "1 hour 16 mins",
+      "value": 4573
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "158 mi",
+      "value": 254448
+    },
+    "duration": {
+      "text": "3 hours 3 mins",
+      "value": 11004
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "165 mi",
+      "value": 266345
+    },
+    "duration": {
+      "text": "2 hours 51 mins",
+      "value": 10244
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "105 mi",
+      "value": 169106
+    },
+    "duration": {
+      "text": "2 hours 3 mins",
+      "value": 7389
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "138 mi",
+      "value": 221804
+    },
+    "duration": {
+      "text": "2 hours 36 mins",
+      "value": 9388
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "237 mi",
+      "value": 382042
+    },
+    "duration": {
+      "text": "4 hours 12 mins",
+      "value": 15121
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "117 mi",
+      "value": 188842
+    },
+    "duration": {
+      "text": "2 hours 26 mins",
+      "value": 8740
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "267 mi",
+      "value": 429805
+    },
+    "duration": {
+      "text": "4 hours 49 mins",
+      "value": 17369
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "66.1 mi",
+      "value": 106449
+    },
+    "duration": {
+      "text": "1 hour 36 mins",
+      "value": 5746
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "127 mi",
+      "value": 204528
+    },
+    "duration": {
+      "text": "2 hours 40 mins",
+      "value": 9572
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "183 mi",
+      "value": 294340
+    },
+    "duration": {
+      "text": "3 hours 32 mins",
+      "value": 12738
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "147 mi",
+      "value": 236297
+    },
+    "duration": {
+      "text": "2 hours 38 mins",
+      "value": 9458
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "116 mi",
+      "value": 185968
+    },
+    "duration": {
+      "text": "2 hours 28 mins",
+      "value": 8878
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "123 mi",
+      "value": 197525
+    },
+    "duration": {
+      "text": "2 hours 20 mins",
+      "value": 8429
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "122 mi",
+      "value": 196278
+    },
+    "duration": {
+      "text": "2 hours 41 mins",
+      "value": 9662
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "181 mi",
+      "value": 290760
+    },
+    "duration": {
+      "text": "3 hours 10 mins",
+      "value": 11382
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "185 mi",
+      "value": 298073
+    },
+    "duration": {
+      "text": "3 hours 27 mins",
+      "value": 12406
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "137 mi",
+      "value": 220555
+    },
+    "duration": {
+      "text": "2 hours 44 mins",
+      "value": 9858
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "47.1 mi",
+      "value": 75746
+    },
+    "duration": {
+      "text": "1 hour 6 mins",
+      "value": 3981
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "176 mi",
+      "value": 283796
+    },
+    "duration": {
+      "text": "3 hours 16 mins",
+      "value": 11740
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "116 mi",
+      "value": 186309
+    },
+    "duration": {
+      "text": "2 hours 25 mins",
+      "value": 8689
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "117 mi",
+      "value": 189072
+    },
+    "duration": {
+      "text": "2 hours 39 mins",
+      "value": 9519
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "239 mi",
+      "value": 384152
+    },
+    "duration": {
+      "text": "4 hours 10 mins",
+      "value": 15019
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "3.0 mi",
+      "value": 4885
+    },
+    "duration": {
+      "text": "14 mins",
+      "value": 837
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "85.5 mi",
+      "value": 137633
+    },
+    "duration": {
+      "text": "2 hours 0 mins",
+      "value": 7227
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "187 mi",
+      "value": 300974
+    },
+    "duration": {
+      "text": "3 hours 24 mins",
+      "value": 12254
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "197 mi",
+      "value": 317466
+    },
+    "duration": {
+      "text": "3 hours 34 mins",
+      "value": 12846
+    },
+    "status": "OK"
+  },
+  {
+    "status": "ZERO_RESULTS"
+  },
+  {
+    "distance": {
+      "text": "122 mi",
+      "value": 196332
+    },
+    "duration": {
+      "text": "2 hours 16 mins",
+      "value": 8178
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "99.4 mi",
+      "value": 159929
+    },
+    "duration": {
+      "text": "1 hour 52 mins",
+      "value": 6734
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "84.9 mi",
+      "value": 136600
+    },
+    "duration": {
+      "text": "1 hour 33 mins",
+      "value": 5570
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "116 mi",
+      "value": 186772
+    },
+    "duration": {
+      "text": "2 hours 43 mins",
+      "value": 9759
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "282 mi",
+      "value": 453152
+    },
+    "duration": {
+      "text": "4 hours 51 mins",
+      "value": 17474
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "317 mi",
+      "value": 509916
+    },
+    "duration": {
+      "text": "5 hours 29 mins",
+      "value": 19728
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "200 mi",
+      "value": 321098
+    },
+    "duration": {
+      "text": "3 hours 39 mins",
+      "value": 13153
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "197 mi",
+      "value": 317811
+    },
+    "duration": {
+      "text": "3 hours 30 mins",
+      "value": 12614
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "218 mi",
+      "value": 351192
+    },
+    "duration": {
+      "text": "3 hours 50 mins",
+      "value": 13778
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "146 mi",
+      "value": 234453
+    },
+    "duration": {
+      "text": "2 hours 37 mins",
+      "value": 9446
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "109 mi",
+      "value": 174714
+    },
+    "duration": {
+      "text": "2 hours 1 min",
+      "value": 7284
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "177 mi",
+      "value": 285328
+    },
+    "duration": {
+      "text": "3 hours 21 mins",
+      "value": 12061
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "113 mi",
+      "value": 181116
+    },
+    "duration": {
+      "text": "2 hours 7 mins",
+      "value": 7648
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "152 mi",
+      "value": 245120
+    },
+    "duration": {
+      "text": "2 hours 49 mins",
+      "value": 10131
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "120 mi",
+      "value": 193521
+    },
+    "duration": {
+      "text": "2 hours 17 mins",
+      "value": 8224
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "100 mi",
+      "value": 161292
+    },
+    "duration": {
+      "text": "1 hour 56 mins",
+      "value": 6931
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "227 mi",
+      "value": 364969
+    },
+    "duration": {
+      "text": "4 hours 18 mins",
+      "value": 15496
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "118 mi",
+      "value": 189248
+    },
+    "duration": {
+      "text": "2 hours 35 mins",
+      "value": 9326
+    },
+    "status": "OK"
+  },
+  {
+    "distance": {
+      "text": "193 mi",
+      "value": 310807
+    },
+    "duration": {
+      "text": "3 hours 25 mins",
+      "value": 12322
+    },
+    "status": "OK"
+  },
+  {
+    "status": "NOT_FOUND"
+  }
+]
