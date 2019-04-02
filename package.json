@@ -1,0 +1,17 @@
+{
+  "name": "test-api",
+  "version": "1.0.0",
+  "description": "Testing Sequelize",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Eales",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.2.8"
+  }
+}
