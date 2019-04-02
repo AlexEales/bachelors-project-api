@@ -1,3 +1,4 @@
+const datastore = require('./datastore');
 const knowledge = require('./knowledge');
 const express = require('express');
 require('dotenv').config();
@@ -6,6 +7,12 @@ app.use(express.json());
 
 console.log(`Env variables: Port = ${process.env.PORT} Host = ${process.env.DB_HOST} Db = ${process.env.DB_NAME} 
     User = ${process.env.DB_USER} Pass = ${process.env.DB_PASS}`);
+
+app.get('/trusts', function (req, res) {
+    datastore.datastore().Trusts.findAll({raw: true, attributes: ['Id', 'Code', 'Name']}).then(values => {
+        res.send(values);
+    });
+});
 
 app.post('/dialogflow', function (req, res) {
     console.log(req.body);
