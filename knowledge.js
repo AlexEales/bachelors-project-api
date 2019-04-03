@@ -29,18 +29,22 @@ datastore.datastore().Trusts.findAll({raw: true, attributes: ['Name']}).then(val
 });
 
 // TODO: Need to make methods for transforms as well as make a knowledge base for DF of common questions.
-function servicesNearLoc(params) {
-    maps.distanceMatrix(params['geo-city'], trusts).then(results => console.log(results));
-    return `Returning services near: ${params['geo-city']}`;
+async function servicesNearLoc(params) {
+    console.log('Called');
+    let results = await maps.distanceMatrix(params['geo-city'], trusts);
+    console.log(results);
+    return `Here are some services near ${params['geo-city']}:\n${results.map(result => {
+        return `\t${result.name} (${result.distance.text})`;
+    }).join('\n')}`;
 }
 
-exports.query = function (intent, entities) {
+exports.query = async function (intent, entities) {
     console.log(`Querying the graph for mapping: ${Object.keys(entities)} -> ${intent}`);
     const inputs = Object.keys(entities);
     if (inputs in graph) {
         if (intent in graph[inputs]) {
             console.log(`Found transform: ${graph[inputs][intent]}`);
-            return graph[inputs][intent](entities);
+            return await graph[inputs][intent](entities);
         }
     }
     return DEFAULT_RESPONSE;

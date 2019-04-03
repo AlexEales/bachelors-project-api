@@ -29,7 +29,6 @@ exports.saveCache = function () {
 
 // TODO: Test the caching system that saves results in a file between to save API calls.
 exports.distanceMatrix = function (source, destinations) {
-    console.log(destinations);
     // Check the cache first.
     if (source in cache) {
         console.log('Results found in cache!');
@@ -42,16 +41,19 @@ exports.distanceMatrix = function (source, destinations) {
         .then(response => {
             // Need to map to the names and distances first.
             let distances = response.data.rows[0].elements.map(elem => elem.distance);
-            let results = {};
+            let results = [];
             for (let i = 0; i < distances.length; i++) {
                 if (distances[i] === undefined) {
                     continue;
                 }
                 if (distances[i].value < 80000) {
-                    results[destinations[i]] = distances[i];
+                    results.push({
+                        name: destinations[i],
+                        distance: distances[i]
+                    });
                 }
             }
-            console.log(results);
+            // TODO: Need to do some sorting on the distances so the closest is first.
             // Store results in the cache.
             cache[source] = results;
             // Return the results in promise.
@@ -59,5 +61,5 @@ exports.distanceMatrix = function (source, destinations) {
         })
         .catch(error => {
             console.log(error);
-        })
+        });
 };

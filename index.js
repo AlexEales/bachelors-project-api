@@ -15,12 +15,12 @@ app.get('/trusts', function (req, res) {
     });
 });
 
-app.post('/dialogflow', function (req, res) {
+app.post('/dialogflow', async function (req, res) {
     console.log(req.body);
     const intent = req.body.queryResult.intent.displayName;
     const entities = req.body.queryResult.parameters;
     res.send({
-        fulfillmentText: knowledge.query(intent, entities)
+        fulfillmentText: await knowledge.query(intent, entities)
     });
 });
 

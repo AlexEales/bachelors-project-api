@@ -1,12 +1,18 @@
 {
-  "Bath": {
-    "2gether NHS Foundation Trust": {
-      "text": "47.1 mi",
-      "value": 75746
+  "Bath": [
+    {
+      "name": "2gether NHS Foundation Trust",
+      "distance": {
+        "text": "47.1 mi",
+        "value": 75746
+      }
     },
-    "Avon and Wiltshire Mental Health Partnership NHS Trust": {
-      "text": "3.0 mi",
-      "value": 4885
+    {
+      "name": "Avon and Wiltshire Mental Health Partnership NHS Trust",
+      "distance": {
+        "text": "3.0 mi",
+        "value": 4888
+      }
     }
-  }
+  ]
 }
