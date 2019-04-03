@@ -27,7 +27,6 @@ exports.saveCache = function () {
     }));
 };
 
-// TODO: Test the caching system that saves results in a file between to save API calls.
 exports.distanceMatrix = function (source, destinations) {
     // Check the cache first.
     if (source in cache) {
@@ -53,7 +52,11 @@ exports.distanceMatrix = function (source, destinations) {
                     });
                 }
             }
-            // TODO: Need to do some sorting on the distances so the closest is first.
+            results.sort((a, b) => {
+                if (a.distance.value < b.distance.value) return -1;
+                else if (a.distance.value > b.distance.value) return 1;
+                else return 0;
+            });
             // Store results in the cache.
             cache[source] = results;
             // Return the results in promise.

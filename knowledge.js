@@ -22,11 +22,11 @@ process.on('SIGUSR1', maps.saveCache);
 process.on('SIGUSR2', maps.saveCache);
 process.on('uncaughtException', maps.saveCache);
 
+// TODO: Maybe make this so that they are only retrieved once from the database at start-up?
 let trusts = [];
-datastore.datastore().Trusts.findAll({raw: true, attributes: ['Name']}).then(values => {
-    trusts = values.map(value => value.Name);
-    // console.log(trusts);
-});
+datastore.datastore().Trusts.findAll({raw: true, attributes: ['Name']}).then(values =>
+    trusts = values.map(value => value.Name)
+);
 
 // TODO: Need to make methods for transforms as well as make a knowledge base for DF of common questions.
 async function servicesNearLoc(params) {
