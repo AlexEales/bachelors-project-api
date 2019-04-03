@@ -7,6 +7,21 @@ const graph = {
     }
 };
 
+// Populate the cache on start-up.
+maps.populateCache();
+
+// Save the maps cache every 5 mins.
+setInterval(function () {
+    maps.saveCache();
+}, 300000);
+
+// Make sure the cache saves before shutdown.
+process.on('exit', maps.saveCache);
+process.on('SIGINT', maps.saveCache);
+process.on('SIGUSR1', maps.saveCache);
+process.on('SIGUSR2', maps.saveCache);
+process.on('uncaughtException', maps.saveCache);
+
 let trusts = [];
 datastore.datastore().Trusts.findAll({raw: true, attributes: ['Name']}).then(values => {
     trusts = values.map(value => value.Name);
@@ -15,17 +30,9 @@ datastore.datastore().Trusts.findAll({raw: true, attributes: ['Name']}).then(val
 
 // TODO: Need to make methods for transforms as well as make a knowledge base for DF of common questions.
 function servicesNearLoc(params) {
-    maps.distanceMatrix(params['geo-city'], trusts);
+    maps.distanceMatrix(params['geo-city'], trusts).then(results => console.log(results));
     return `Returning services near: ${params['geo-city']}`;
 }
-
-// Example:
-// let trusts = [];
-// datastore.datastore().Trusts.findAll({raw: true, attributes: ['Id', 'Code', 'Name']}).then(values => {
-//     trusts = values;
-// });
-//
-// app.get('/trusts', (req, res) => res.send(trusts));
 
 exports.query = function (intent, entities) {
     console.log(`Querying the graph for mapping: ${Object.keys(entities)} -> ${intent}`);
