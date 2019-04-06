@@ -1,6 +1,8 @@
+const dialogflow = require('dialogflow');
 const datastore = require('./datastore');
 const knowledge = require('./knowledge');
 const express = require('express');
+const uuid = require('uuid');
 require('dotenv').config();
 
 const app = express();
@@ -16,11 +18,35 @@ app.get('/trusts', function (req, res) {
 });
 
 app.post('/dialogflow', async function (req, res) {
-    console.log(req.body);
+    // console.log(req.body);
     const intent = req.body.queryResult.intent.displayName;
     const entities = req.body.queryResult.parameters;
     res.send({
         fulfillmentText: await knowledge.query(intent, entities)
+    });
+});
+
+app.post('/message', async function (req, res) {
+    const message = req.body.text;
+    const projectId = process.env.DIALOGFLOW_ID;
+    const sessionId = uuid.v4();
+    const sessionClient = new dialogflow.SessionsClient({
+        credentials: JSON.parse(process.env.DIALOGFLOW_KEY)
+    });
+    const sessionPath = sessionClient.sessionPath(projectId, sessionId);
+    const request = {
+        session: sessionPath,
+        queryInput: {
+            text: {
+                text: message,
+                languageCode: 'en'
+            }
+        }
+    };
+    const responses = await sessionClient.detectIntent(request);
+    const result = responses[0].queryResult;
+    res.send({
+        text: result.fulfillmentMessages[0].text.text[0]
     });
 });
 
