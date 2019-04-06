@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(express.json());
-app.use(cors);
+app.use(cors());
 
 const projectId = process.env.DIALOGFLOW_ID;
 const sessionId = uuid.v4();
