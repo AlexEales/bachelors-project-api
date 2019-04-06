@@ -2,11 +2,13 @@ const dialogflow = require('dialogflow');
 const datastore = require('./datastore');
 const knowledge = require('./knowledge');
 const express = require('express');
+const cors = require('cors');
 const uuid = require('uuid');
 require('dotenv').config();
 
 const app = express();
 app.use(express.json());
+app.use(cors);
 
 console.log(`Env variables: Port = ${process.env.PORT} Host = ${process.env.DB_HOST} Db = ${process.env.DB_NAME} 
     User = ${process.env.DB_USER} Pass = ${process.env.DB_PASS}`);
