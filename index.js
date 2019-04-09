@@ -27,12 +27,17 @@ app.get('/trusts', function (req, res) {
 });
 
 app.post('/dialogflow', async function (req, res) {
-    console.log(req.body);
     const intent = req.body.queryResult.intent.displayName;
     const entities = req.body.queryResult.parameters;
-    res.send({
-        fulfillmentText: await knowledge.query(intent, entities)
-    });
+    if (req.body.queryResult.fulfillmentText !== '') {
+        res.send({
+            fulfillmentText: req.body.queryResult.fulfillmentText
+        });
+    } else {
+        res.send({
+            fulfillmentText: await knowledge.query(intent, entities)
+        });
+    }
 });
 
 app.post('/message', async function (req, res) {
